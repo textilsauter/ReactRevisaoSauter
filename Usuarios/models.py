@@ -13,7 +13,7 @@ class Revisao(models.Model):
     UserMaquina = models.IntegerField()
     UserMetros = models.IntegerField() 
     UserPeso = models.FloatField()
-    UserCliente = models.IntegerField()  
+    UserCliente = models.CharField(max_length=40)  
     UserNumDefeitos = models.IntegerField()
     UserRefugo = models.FloatField()
     UserLotes = models.CharField(max_length=40)
