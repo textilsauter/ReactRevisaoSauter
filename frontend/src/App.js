@@ -15,7 +15,7 @@ function App() {
       <header class="bg-purple text-white py-4">
     <div class="container">
       <h4 class="display-8">Controle de produção</h4>
-      <p class="lead">Ordens de Urdideira</p>
+      <p class="lead">Ordens de Revisão</p>
     </div>
      </header>
         <div className="App container">

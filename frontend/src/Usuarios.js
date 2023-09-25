@@ -405,9 +405,7 @@ export class Usuarios extends Component {
                                 <td>{use.UserOperador}</td> 
                                 <td>{use.UserProduto}</td> 
                                 <td>{use.UserFornecedor}</td> 
-                         
                                 <td>{use.UserMaquina}</td> 
-                               
                                 <td>{use.UserMetros}</td> 
                                 <td>{use.UserPeso}</td> 
                                 <td>{use.UserCliente}</td> 
@@ -485,7 +483,7 @@ export class Usuarios extends Component {
                                             onChange={this.changeUserUrdideira}
                                         >
                                             {/* Add the options dynamically from your API or other data source */}
-                                            <option value="">Selecione Produto...</option>
+                                            <option value="">Selecione Revisadora...</option>
                                             <option value="1">Revisadeira 1 </option>
                                             <option value="2">revisadeira 2</option>
                                             <option value="3">Revisadeira 3</option>
@@ -518,13 +516,12 @@ export class Usuarios extends Component {
                                     <input type="text" className="form-control" placeholder={this.state.UserProduto}
                                         value={users.UserProduto}
                                         onChange={this.changeUserProduto}></input>
-                                    </div>
-                                    
-
-                                        
                                     
                                     
-                                    <div className="input-group mb-3"></div>
+                                 
+                                    
+                                    
+                                    
                                     
                                     <span className="input-group-text">Maquina</span>
                                         <select
@@ -561,27 +558,27 @@ export class Usuarios extends Component {
                                     <input type="text" className="form-control" placeholder={this.state.UserPeso}
                                         value={users.UserPeso}
                                         onChange={this.changeUserPeso }></input>
-                                    
+                                    <div className="input-group mb-3"></div>
 
                                     <span className="input-group-text">Cliente </span>
                                     <input type="text" className="form-control" placeholder={this.state.UserCliente}
                                         value={users.UserCliente}
                                         onChange={this.changeUserCliente}></input>
-                                    <div className="input-group mb-3"></div>
+                                    
 
                                     <span className="input-group-text">NumDefeitos </span>
                                     <input type="text" className="form-control" placeholder={this.state.UserNumDefeitos}
                                         value={users.UserNumDefeitos}
                                         onChange={this.changeUserNumDefeitos }></input>
-                                    
-
+                                   
+                                   
                                     <span className="input-group-text">Refugo </span>
                                     <input type="text" className="form-control" placeholder={this.state.UserRefugo}
                                         value={users.UserRefugo}
                                         onChange={this.changeUserRefugo}></input>
 
-                                    <div className="input-group mb-3"></div>
 
+                                    <div className="input-group mb-3"></div>
                                     <span className="input-group-text">Lotes </span>
                                     <input type="text" className="form-control" placeholder={this.state.UserLotes}
                                         value={users.UserLotes}
@@ -604,7 +601,7 @@ export class Usuarios extends Component {
                                     className="btn btn-primary float-start" onClick={() => this.updateClick()}>Update</button>
                                 : null}
                         </div> </div>
-
+                        </div>
  
                                 
                 </div>

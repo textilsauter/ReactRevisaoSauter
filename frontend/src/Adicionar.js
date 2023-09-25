@@ -10,7 +10,7 @@ export class Adicionar extends Component {
             // variaveis usadas para janela de modificação
             modalTitle: "",          
             UserId:0,
-            
+           
             UserNumero: "",
             UserRevisao:"",
             UserOperador:"",
@@ -91,6 +91,7 @@ export class Adicionar extends Component {
             UserNumDefeitos,
             UserRefugo,
             UserLotes,
+            UserUrdideira,
          
         } = this.state;
 
@@ -115,7 +116,7 @@ export class Adicionar extends Component {
                                             onChange={(e) => this.setState({ UserRevisao: e.target.value })}
                                         >
                                             {/* Add the options dynamically from your API or other data source */}
-                                            <option value="">Selecione Produto...</option>
+                                            <option value="">Selecione Revisadora...</option>
                                             <option value="1">Revisadora 1 </option>
                                             <option value="2">Revisadora 2</option>
                                             <option value="3">Revisadora 3</option>
@@ -159,8 +160,8 @@ export class Adicionar extends Component {
                                 
                         
 
-                                <div className="input-group mb-3"></div>
-                                           <span className="input-group-text">Maquinas</span>
+                               
+                                           <span className="input-group-text">Maquina</span>
                                         <select
                                             className="form-select"
                                             value={this.state.UserMaquina}
@@ -185,6 +186,10 @@ export class Adicionar extends Component {
                                         </select>
                                     
                                 
+                                        <span className="input-group-text">Metros	</span>
+                                <input type="text" className="form-control" 
+                                value={UserMetros}
+                                onChange={(e) => this.setState({ UserMetros: e.target.value })}></input>
 
                                 
                                 <span className="input-group-text">Peso	</span>
@@ -193,13 +198,37 @@ export class Adicionar extends Component {
                                 onChange={(e) => this.setState({ UserPeso: e.target.value })}></input>
 
                                 
-                                <span className="input-group-text">Metros	</span>
+<div className="input-group mb-3"></div>
+                                <span className="input-group-text">Cliente	</span>
                                 <input type="text" className="form-control" 
-                                value={UserMetros}
-                                onChange={(e) => this.setState({ UserMetros: e.target.value })}></input>
+                                value={UserCliente}
+                                onChange={(e) => this.setState({ UserCliente: e.target.value })}></input>
 
                                 
+                                <span className="input-group-text">NumDefeitos	</span>
+                                <input type="text" className="form-control" 
+                                value={UserNumDefeitos}
+                                onChange={(e) => this.setState({ UserNumDefeitos: e.target.value })}></input>
 
+                                <span className="input-group-text">Refugo	</span>
+                                <input type="text" className="form-control" 
+                                value={UserRefugo}
+                                onChange={(e) => this.setState({ UserRefugo: e.target.value })}></input>
+
+<div className="input-group mb-3"></div>
+                                <span className="input-group-text">Lotes	</span>
+                                <input type="text" className="form-control" 
+                                value={UserLotes}
+                                onChange={(e) => this.setState({ UserLotes: e.target.value })}></input>
+
+                                <span className="input-group-text">Urdideira	</span>
+                                <input type="text" className="form-control" 
+                                value={UserUrdideira}
+                                onChange={(e) => this.setState({ UserUrdideira: e.target.value })}></input>
+
+                                
+                                
+                                
 
                                 <button type="button"
                                     className="btn btn-primary float-start" onClick={() => this.createClick()}>Create</button>

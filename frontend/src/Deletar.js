@@ -61,7 +61,7 @@ export class Deletar extends Component {
                     <select value={selectedUser ? selectedUser.UserId : ''} onChange={this.handleUserChange}>
                         <option value="">Selecione a Ordem</option>
                         {users.map(user =>
-                            <option key={user.UserId} value={user.UserId}>{user.UserNumero} {user.UserOperador}</option>
+                            <option key={user.UserId} value={user.UserId}>{user.UserNumero} {user.UserOperador} {user.UserProduto} {user.UserPeso} {user.UserMetros}</option>
                         )}
                     </select>
     
@@ -69,9 +69,11 @@ export class Deletar extends Component {
                         <table className='table table-striped'>
                             <th>ID: <br></br>{selectedUser.UserId}</th>
                             <th>Numero:<br></br> {selectedUser.UserNumero}</th>
-                            <th>Urdideira: <br></br>{selectedUser.UserUrdideira}</th>
+                            
                             <th>Fornecedor:<br></br> {selectedUser.UserOperador}</th>
-                            <th>Fio: <br></br>{selectedUser.UserFio}</th>
+                            <th>Artigo: <br></br>{selectedUser.UserProduto}</th>
+                            <th>Peso <br></br>{selectedUser.UserPeso}</th>
+                            <th>MEtros <br></br>{selectedUser.UserMetros}</th>
                             <th>Data de criação:<br></br> {selectedUser.UserData_cadastro}</th>
                         </table>
                     )   
