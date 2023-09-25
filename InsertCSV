@@ -1,0 +1,27 @@
+import sqlite3
+import csv
+
+# Replace this with the path to your SQLite database file
+database_path = r"C:\Users\Thinkpad\Downloads\React_django-master\db.sqlite3"
+
+# Replace this with the path to your CSV file
+csv_file_path = r"C:\Users\Thinkpad\Downloads\React_django-master\urd_31_07.csv"
+
+# Connect to the SQLite database
+connection = sqlite3.connect(database_path)
+cursor = connection.cursor()
+
+# Open the CSV file and insert the data into the table
+with open(csv_file_path, newline='', encoding='utf-8') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    next(csv_reader)  # Skip the header row if present
+
+    for row in csv_reader:
+        cursor.execute(
+            "INSERT INTO Usuarios_user (UserNumero, UserOperador, UserUrdideira, UserProduto, UserFornecedor, UserFio, UserCorFio, UserQtdFio, UserBarra, UserRolos, UserMetros, UserMaquina, UserBob, UserData_Cadastro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            row
+        )
+
+# Commit the changes and close the connection
+connection.commit()
+connection.close()

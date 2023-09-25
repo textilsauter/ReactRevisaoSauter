@@ -1,0 +1,6 @@
+import { format } from 'date-fns';
+
+function formatarData(data) {
+  // Formata a data no formato "hh:mm:ss dd/MM/aa"
+  return format(new Date(data), 'HH:mm:ss dd/MM/yy');
+}

@@ -1,0 +1,31 @@
+body {
+	background-image: url('https://www.longa.com.br/wp-content/uploads/2020/10/layout-de-armazem-1024x538.jpg');
+  
+	background-size: cover;
+	background-position: top center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  
+}
+
+footer{
+	left: 7%;	
+	right: 7%;
+	position: fixed;
+	width: 100%;
+    bottom: 5px;
+	background-color: blue;
+	background-image: 
+    url('http://textilsauter.com.br/wp-content/uploads/2019/08/icon.ico'),
+    url('http://textilsauter.com.br/wp-content/uploads/2019/08/icon.ico');
+	background-repeat: no-repeat;
+	background-position: left top, right top;
+	background-size: 25px 25px; /* Adjust the size as needed */
+	width: 100%; /* Set the width to span the entire container */
+	height: 25px; /* Adjust the height as needed */
+
+	
+}
