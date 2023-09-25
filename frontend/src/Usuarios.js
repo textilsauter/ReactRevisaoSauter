@@ -404,10 +404,10 @@ export class Usuarios extends Component {
                                 <td>{use.UserRevisao}</td> 
                                 <td>{use.UserOperador}</td> 
                                 <td>{use.UserProduto}</td> 
-                                <td>{use.UserFornecedor}</td> 
                                 <td>{use.UserMaquina}</td> 
                                 <td>{use.UserMetros}</td> 
                                 <td>{use.UserPeso}</td> 
+                                
                                 <td>{use.UserCliente}</td> 
                                 <td>{use.UserNumDefeitos}</td> 
                                 <td>{use.UserRefugo}</td> 
