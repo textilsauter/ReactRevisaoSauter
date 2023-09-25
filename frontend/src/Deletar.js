@@ -61,7 +61,7 @@ export class Deletar extends Component {
                     <select value={selectedUser ? selectedUser.UserId : ''} onChange={this.handleUserChange}>
                         <option value="">Selecione a Ordem</option>
                         {users.map(user =>
-                            <option key={user.UserId} value={user.UserId}>{user.UserNumero} {user.UserOperador} {user.UserProduto} {user.UserPeso} {user.UserMetros}</option>
+                            <option key={user.UserId} value={user.UserId}>{user.UserNumero} {user.UserData_cadastro} {user.UserOperador} {user.UserProduto} {user.UserPeso} {user.UserMetros}</option>
                         )}
                     </select>
     
