@@ -1,4 +1,4 @@
 export const variables={
-    API_URL:"https://reactrevisaosauter-production.up.railway.app/"
+    API_URL:"http://127.0.0.1:8000/"
 
 }

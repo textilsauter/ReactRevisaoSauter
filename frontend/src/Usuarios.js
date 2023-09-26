@@ -102,7 +102,7 @@ export class Usuarios extends Component {
         this.setState({UserMetros:e.target.value});
     }
     changeUserPeso =(e)=>{
-        this.setState({UserCorPeso:e.target.value});
+        this.setState({UserPeso:e.target.value});
     }
     changeUserCliente =(e)=>{
         this.setState({UserCliente:e.target.value});
@@ -263,17 +263,15 @@ export class Usuarios extends Component {
                 'UserRevisao': this.state.UserRevisao,
                 'UserOperador': this.state.UserOperador,
                 'UserProduto': this.state.UserProduto,
-                'UserMaquina': this.state.Usermaquina,
+                'UserMaquina': this.state.UserMaquina,
                 'UserMetros': this.state.UserMetros,
                 'UserPeso': this.state.UserPeso,
                 'UserCliente': this.state.UserCliente,
                 'UserNumDefeitos': this.state.UserNumDefeitos,
                 'UserRefugo': this.state.UserRefugo,
-                'UserLotes': this.state.UserLotes,
-    
+                'UserLotes': this.state.UserLotes,    
                 'UserUrdideira': this.state.UserUrdideira,
                 'UserData_cadastro': this.state.UserData_cadastro,
-    
                 
                       
                
@@ -479,8 +477,8 @@ export class Usuarios extends Component {
                                         <span className="input-group-text">Revisadora</span>
                                         <select
                                             className="form-select"
-                                            value={this.state.UserUrdideira}
-                                            onChange={this.changeUserUrdideira}
+                                            value={this.state.UserRevisao}
+                                            onChange={this.changeUserRevisao}
                                         >
                                             {/* Add the options dynamically from your API or other data source */}
                                             <option value="">Selecione Revisadora...</option>
