@@ -1,7 +1,8 @@
 body {
-	background-image: url('https://www.longa.com.br/wp-content/uploads/2020/10/layout-de-armazem-1024x538.jpg');
-	background-repeat: no-repeat;
+	background-image: url('https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+	background-repeat: 1;
 	background-size: cover;
+
 	background-position: top center;
 }
 
