@@ -499,6 +499,7 @@ export class Usuarios extends Component {
                                             <option value="">Selecione </option>
                                             <option value="Willian">Willian</option>
                                             <option value="Fabricio">Fabricio</option>
+                                            <option value="Kaique">Kaique</option>
                                             <option value="Letica">Letica</option>
                                             <option value="Janete">Janete</option>
                                             <option value="Judith">Judith</option>
