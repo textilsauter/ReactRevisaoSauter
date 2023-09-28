@@ -560,7 +560,7 @@ export class Usuarios extends Component {
                                     <div className="input-group mb-3"></div>
 
                                     <span className="input-group-text">Cliente </span>
-                                    <input type="text" className="form-control" placeholder={this.state.UserCliente}
+                                    <input type="text" className="form-control" autocomplete="on" placeholder={this.state.UserCliente}
                                         value={users.UserCliente}
                                         onChange={this.changeUserCliente}></input>
                                     
