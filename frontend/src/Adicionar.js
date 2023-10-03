@@ -45,19 +45,20 @@ export class Adicionar extends Component {
                 // UserEmail: this.state.UserEmail,
                 // UserData_nascimento: this.state.UserData_nascimento,
                 // UserData_cadastro: this.state.currentDate,
-                UserNumero: '9900' + this.state.UserNumero,
+                UserId: this.state.UserId,
+                UserNumero: this.state.UserNumero,
                 UserRevisao: this.state.UserRevisao,
                 UserOperador: this.state.UserOperador,
-                UserProduto: this.state.UserProduto,
-                UserFornecedor: this.state.UserFornecedor,
-                UserFio: this.state.UserFio,
-                UserCorFio: this.state.UserCorFio,
-                UserBob: this.state.UserBob,
-                UserQtdFio: this.state.UserQtdFio,
-                UserBarra: this.state.UserBarra,
+                UserProduto: this.state.UserProduto,       
                 UserMaquina: this.state.UserMaquina,
-                UserRolos: this.state.UserRolos,
+             
                 UserMetros: this.state.UserMetros,
+                UserPeso: this.state.UserPeso,
+                UserCliente: this.state.UserCliente,
+                UserNumDefeitos: this.state.UserNumDefeitos,
+                UserRefugo: this.state.UserRefugo,
+                UserLotes: this.state.UserLotes,
+    
                 UserUrdideira: this.state.UserUrdideira,
                 UserData_cadastro: this.state.currentDate,
                 
@@ -199,9 +200,9 @@ export class Adicionar extends Component {
                                 onChange={(e) => this.setState({ UserPeso: e.target.value })}></input>
 
                                 
-<div className="input-group mb-3"></div>
+                            <div className="input-group mb-3"></div>
                                 <span className="input-group-text">Cliente	</span>
-                                <input type="text" className="form-control" 
+                                <input type="text" className="form-control" autocomplete= "on"
                                 value={UserCliente}
                                 onChange={(e) => this.setState({ UserCliente: e.target.value })}></input>
 
