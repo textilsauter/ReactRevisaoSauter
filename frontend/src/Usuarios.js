@@ -497,7 +497,7 @@ export class Usuarios extends Component {
                                         >
                                             {/* Add the options dynamically from your API or other data source */}
                                             <option value="">Selecione </option>
-                                            <option value="Gabriel">Gabriel</option>
+                                            <option value="Marcos">Marcos</option>
                                             <option value="Fabricio">Fabricio</option>
                                             <option value="Kaique">Kaique</option>
                                             <option value="Letica">Letica</option>
