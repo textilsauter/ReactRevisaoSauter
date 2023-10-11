@@ -134,7 +134,7 @@ export class Adicionar extends Component {
                                             {/* Add the options dynamically from your API or other data source */}
                                 
                                             <option value="">Selecione </option>
-                                            <option value="Willian">Willian</option>
+                                            <option value="Gabriel">Gabriel</option>
                                             <option value="Fabricio">Fabricio</option>
                                             <option value="Kaique">Kaique</option>
                                             <option value="Letica">Letica</option>
@@ -202,7 +202,7 @@ export class Adicionar extends Component {
                                 
                             <div className="input-group mb-3"></div>
                                 <span className="input-group-text">Cliente	</span>
-                                <input type="text" className="form-control" autocomplete= "on"
+                                <input type="text" name="userCliente"  className="form-control" autocomplete= "on"
                                 value={UserCliente}
                                 onChange={(e) => this.setState({ UserCliente: e.target.value })}></input>
 
