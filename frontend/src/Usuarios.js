@@ -497,7 +497,7 @@ export class Usuarios extends Component {
                                         >
                                             {/* Add the options dynamically from your API or other data source */}
                                             <option value="">Selecione </option>
-                                            <option value="Willian">Willian</option>
+                                            <option value="Gabriel">Gabriel</option>
                                             <option value="Fabricio">Fabricio</option>
                                             <option value="Kaique">Kaique</option>
                                             <option value="Letica">Letica</option>
@@ -558,9 +558,9 @@ export class Usuarios extends Component {
                                         value={users.UserPeso}
                                         onChange={this.changeUserPeso }></input>
                                     <div className="input-group mb-3"></div>
-
+                                     
                                     <span className="input-group-text">Cliente </span>
-                                    <input type="text" className="form-control" autocomplete="on" placeholder={this.state.UserCliente}
+                                    <input type="text" name="userCliente"  className="form-control" autocomplete="on" placeholder={this.state.UserCliente}
                                         value={users.UserCliente}
                                         onChange={this.changeUserCliente}></input>
                                     
