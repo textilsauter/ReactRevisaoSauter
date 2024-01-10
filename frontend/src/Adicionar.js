@@ -140,7 +140,7 @@ export class Adicionar extends Component {
                                             <option value="Letica">Letica</option>
                                             <option value="Janete">Janete</option>
                                             <option value="Judith">Judith</option>
-                                            
+                                            <option value="Lucilene">Lucilene</option>
                                           
                                           
                                             {/* Add more options here */}
