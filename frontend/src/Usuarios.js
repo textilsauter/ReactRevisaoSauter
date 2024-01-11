@@ -503,7 +503,7 @@ export class Usuarios extends Component {
                                             <option value="Letica">Letica</option>
                                             <option value="Janete">Janete</option>
                                             <option value="Judith">Judith</option>
-                                            
+                                            <option value="Lucinele">Lucilene</option>
                                           
                                             {/* Add more options here */}
                                         </select>
